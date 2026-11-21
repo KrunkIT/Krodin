@@ -1,5 +1,59 @@
 # Changelog
 
+## Krodin v0.3.0-beta.1
+
+The third beta. The first part is a summary of what changed since `v0.2.0-beta.1`, and the complete list follows.
+
+### Highlights
+
+- **Host comp lobbies.** The Host page creates a Krunker custom game with the Competitive preset and gives you the invite link. Hosting and the Servers page need a Krunker account login.
+- **Krunker-style comp menu.** Competitive and ranked lobbies now use a copy of Krunker's comp lobby screen: the class bar, the team scores and lists, the timer and Krunker's button row, plus Servers and Mods buttons. One click picks a class, using that class's last secondary (the pistol the first time). The brush button opens the loadout.
+- **Melee skins (local only).** The loadout page's Melee section opens a picker of Krunker's melee skins. The skin you pick shows in first person, in its own inspect style and sounds, in the HUD, the killfeed and your shadow. It is cosmetic and only on your screen: nothing is sent to Krunker, and other players see your real skin.
+- **Quality presets.** Settings → Video → Quality preset: Potato, Low, Medium or High. Potato is for weak laptops and integrated GPUs.
+- **Render distance.** Krunker's Render Distance setting, which also imports and exports with Krunker settings.
+- **Fixed leaderboards.** Scores and kills now update in every Krunker mode, including Zombies.
+
+### Joining and hosting
+
+- **Hosting:** creates the lobby on the same connection, solves Krunker's lobby check by itself, and stops with a clear message if Krunker's verification window is signed in to a different account or as a guest.
+- **Regions:** joins and hosting now send the lobby's own region (or the one you chose), which fixes joins that were sent to the wrong region and asked for a verification they didn't need.
+- **Join errors:** a failed join shows Krunker's reason in plain words, for example "Couldn't join: That lobby is full", instead of the raw server reply.
+
+### Menus and settings
+
+- **Comp lobby screen:**
+  - Full classes are greyed out with a lock, and so is your own class.
+  - Enemy classes show as "???".
+  - "Waiting for players" shows above the button row.
+  - Icons use Material Icons, the same icon font Krunker uses.
+  - The orange focus ring only shows when you use the keyboard (Tab or arrows), never after a click.
+- **Melee picker:** searchable, with a preview for each skin. Animated skins are not included yet.
+- **Render scale warning:** setting Render scale above 100% shows a 5-second notice, because it costs a lot of FPS.
+
+### Graphics and performance
+
+- **Vulkan fallback notice:** if Vulkan can't start, Krodin uses OpenGL as before, and now tells you why (no driver, a GPU that only has an older Vulkan, missing features). A driver update may fix it, and Krodin tries Vulkan again on every start.
+- **Smoother mouse input:** the cursor is pinned while you play, so moving the mouse no longer causes slow frames. Aiming is unchanged.
+- **Smaller download:** Krunker's configs and the bundled maps ship as compact binary packs.
+
+### Diagnostics
+
+- The log records why Vulkan couldn't start, and failed joins log Krunker's full reply.
+
+### Complete list of changes
+
+- Ship Krunker configs and bundled maps as compact binary packs
+- Warn when Render scale is above 100%
+- Leaderboard: stats for every Krunker mode
+- Pin the cursor while playing so event polls stay cheap
+- Tell the player when Vulkan can't start (OpenGL fallback notice)
+- Leaderboard: Zombies sends points, zombies, downs and damage
+- Quality presets (Potato, Low, Medium, High) and Krunker's Render Distance
+- Join errors: show Krunker's message, not the HTTP payload
+- Krunker-style comp/ranked lobby menu and local melee skins
+- Host Krunker custom games (Competitive preset); Servers and Host need a login
+- Internal: hold the embedded config pack through a pointer, opt-in Tracy profiler instrumentation, and a log analyser for tester logs
+
 ## Krodin v0.2.0-beta.1
 
 The second beta. The first part is a summary of what changed since `v0.1.0-beta.1`, and the complete list follows.
