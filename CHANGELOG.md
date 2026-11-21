@@ -1,6 +1,6 @@
 # Changelog
 
-## Krodin v0.2.0-beta
+## Krodin v0.2.0-beta.1
 
 The second beta. Since `v0.1.0-beta.1` there are 19 merged pull requests. The first part is a summary, and the complete list follows.
 
