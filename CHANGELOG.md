@@ -12,7 +12,7 @@ The third beta. The first part is a summary of what changed since `v0.2.0-beta.1
 - **Quality presets.** Settings → Video → Quality preset: Potato, Low, Medium or High. Potato is for weak laptops and integrated GPUs.
 - **Render distance.** Krunker's Render Distance setting, which also imports and exports with Krunker settings.
 - **Fixed leaderboards.** Scores and kills now update in every Krunker mode, including Zombies.
-- **New name and icon.** The game is now `Krodin.exe`, with the Krodin logo as its icon, and the download no longer has "Testing" in its name. If you pinned `krodin_client.exe` to the taskbar, or picked a GPU for it in Windows or the NVIDIA Control Panel, do that again for `Krodin.exe`.
+- **New name and icon.** The game is now `Krodin.exe`, with the Krodin logo as its icon, and the download no longer has "Testing" in its name. If you pinned `krodin_client.exe` to the taskbar, or picked a GPU for it in Windows or the NVIDIA Control Panel, do that again for `Krodin.exe`. Thanks to `@_ylive` on Discord for the logo.
 
 ### Joining and hosting
 
