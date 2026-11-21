@@ -6,7 +6,7 @@ This repository only hosts Krodin's releases. The source code is private.
 
 ## Download
 
-Get the latest build from [Releases](../../releases). Unzip it anywhere and run `krodin_client.exe`. `README-TESTERS.txt` inside the zip covers first-time setup.
+Get the latest build from [Releases](../../releases). Unzip it anywhere and run `Krodin.exe`. `README-TESTERS.txt` inside the zip covers first-time setup.
 
 ## Changes
 

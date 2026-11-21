@@ -12,6 +12,7 @@ The third beta. The first part is a summary of what changed since `v0.2.0-beta.1
 - **Quality presets.** Settings → Video → Quality preset: Potato, Low, Medium or High. Potato is for weak laptops and integrated GPUs.
 - **Render distance.** Krunker's Render Distance setting, which also imports and exports with Krunker settings.
 - **Fixed leaderboards.** Scores and kills now update in every Krunker mode, including Zombies.
+- **New name and icon.** The game is now `Krodin.exe`, with the Krodin logo as its icon, and the download no longer has "Testing" in its name. If you pinned `krodin_client.exe` to the taskbar, or picked a GPU for it in Windows or the NVIDIA Control Panel, do that again for `Krodin.exe`.
 
 ### Joining and hosting
 
@@ -52,6 +53,7 @@ The third beta. The first part is a summary of what changed since `v0.2.0-beta.1
 - Join errors: show Krunker's message, not the HTTP payload
 - Krunker-style comp/ranked lobby menu and local melee skins
 - Host Krunker custom games (Competitive preset); Servers and Host need a login
+- Name the Windows client Krodin.exe and give it the Krodin logo icon
 - Internal: hold the embedded config pack through a pointer, opt-in Tracy profiler instrumentation, and a log analyser for tester logs
 
 ## Krodin v0.2.0-beta.1
