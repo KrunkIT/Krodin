@@ -1,5 +1,55 @@
 # Changelog
 
+## Krodin v0.4.0-beta.1
+
+The fourth beta. The first part is a summary of what changed since `v0.3.0-beta.1`, and the complete list follows.
+
+### Highlights
+
+- **Windows installer.** `Krodin-Setup-0.4.0-beta.1.exe` installs Krodin for your user only, with no admin rights needed, and adds a Start menu shortcut. The zip is still available if you prefer it. The installer isn't code-signed yet, so Windows SmartScreen will warn you the first time.
+- **Your data lives outside the game folder.** Settings, logs, the cache and mods now live in `%LOCALAPPDATA%\Krodin`, so updating or reinstalling no longer touches them. On first start, Krodin copies your old settings and mods from beside the exe. To keep the old layout, put an empty `portable.txt` file next to `Krodin.exe`. Settings → Gameplay → Diagnostics has an "Open logs folder" button.
+- **Krunker HUD by default.** New installs start with the Krunker HUD style.
+- **K/D counter.** Krunker's "Show K/D Counter" setting, off by default, which imports and exports with your Krunker settings. FPS and ping now look like Krunker's and sit beside the timer, and all Krunker-style HUD text uses the Krunker font.
+- **Krunker customization.** Score popups, damage numbers, nametag styles, the throwing-knife crosshair, the progress bar and UI scale, all as in Krunker's settings.
+- **Show sights.** A setting and a Toggle sights bind (unbound by default) that hide weapon sights, for custom models that break with them.
+- **Asset pack.** Game files ship as one `assets.kpak` with compressed world textures. Adds Texture quality and Mip bias settings, and mod packs still work.
+
+### Gameplay
+
+- **Hardpoint rounds:**
+  - Public Hardpoint is one round.
+  - Comp and ranked Hardpoint use the lobby's rounds, 3 by default, played as best-of with No Draws.
+  - A tied round gets 60 extra seconds.
+  - The round counter only shows when there's more than one round.
+- **Ramps:** shots pass through ramps as they do in Krunker. Bullet holes no longer float in the air above a slope, and tracers leave the barrel when you stand on one.
+- **Bullet holes:** they now appear on every map object a shot hits, as in Krunker.
+- **Slide timer:** it counts in double-precision milliseconds, like Krunker.
+- **Net rate:** the 720 and 1000 Hz options are gone, so 520 Hz is the top. A saved rate above 520 loads as 520.
+
+### Settings
+
+- **Krunker settings import and export:** these now cover the per-weapon viewmodel and more keybinds, and importing then exporting keeps every setting unchanged.
+- **Audio:** Krunker's HRTF and distance falloff only, with Krunker's volume sliders and sound volumes. The old spatial audio, falloff and loudness options are gone.
+- **Cursor:** the Play click that enters or re-enters the game now captures the cursor straight away.
+
+### Complete list of changes
+
+- Keep user data outside the install folder; Windows installer
+- Default the HUD style to Krunker
+- Capture the cursor on the Play click that (re)enters the game
+- Bullet holes on every hit map object, as in Krunker
+- Krunker settings parity: per-weapon viewmodel, more keys, lossless round trip
+- Slide timer in double-precision milliseconds, like Krunker
+- Match Krunker's audio: HRTF and Krunker falloff only, Krunker's sliders and sound volumes
+- Asset pack (assets.kpak) with compressed world textures, Texture quality and Mip bias
+- Krunker customization: score popups, damage numbers, nametags, throwing crosshair, progress bar, UI scale
+- Remove the 720 and 1000 Hz Net rate options; 520 Hz is the top
+- Show sights setting and Toggle sights bind
+- K/D counter, Krunker-style FPS and ping, and the Krunker font across the Krunker HUD
+- Hardpoint: one round in public lobbies, the lobby's rounds in comp and ranked
+- Shots pass through ramps, as in Krunker
+- Internal: test builds compile with 4 threads
+
 ## Krodin v0.3.0-beta.1
 
 The third beta. The first part is a summary of what changed since `v0.2.0-beta.1`, and the complete list follows.
