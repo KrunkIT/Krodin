@@ -1,5 +1,30 @@
 # Changelog
 
+## Krodin v0.4.1-beta.1
+
+A hotfix and feature update for `v0.4.0-beta.1`. The first part is a summary, and the complete list follows.
+
+### Fixes
+
+- **Missing HUD icons.** The K/D counter icons and the end screen's victory, defeat and draw titles were missing from the 0.4.0 installer and zip. They're back.
+- **Account name after joining.** After switching lobbies you could stay `Guest_<number>` until your first death. Krunker often confirms your login just after you spawn and then renames you, and Krodin now applies that rename straight away.
+
+### New
+
+- **No login needed to join.** If you aren't logged in, joining any lobby from an invite link or the Servers page joins you as a guest. The "Play as guest" button is gone and the Servers page is open to everyone. Hosting a game still needs a Krunker account. A saved login that has expired is renewed instead of falling back to a guest.
+- **Killstreaks.** Streak slot 1, 2 and 3 binds (keys 1, 2 and 3 by default) call in your earned streaks, as in Krunker. They're in Settings → Controls and import and export with your Krunker settings. Earned streaks show beside the ammo box, and the Nuke plays Krunker's siren, blast and white flash. For now slot 3 is always the Nuke and the boxes show the streak's name instead of its image. Krunker only gives Nukes to logged-in accounts.
+- **End screen chat.** You can open chat and keep talking on the end screen.
+- **Class icons on the end screen.** Each player's circle on the end-screen leaderboard shows the class they last played.
+
+### Complete list of changes
+
+- Include the K/D counter and end-screen title icons in packaged builds
+- Chat on the end screen
+- End-screen leaderboard: each player's last-played class icon
+- Join as a guest when not logged in; remove the Play as guest button
+- Killstreak call-ins: Streak slot binds, the streak holder and the Nuke
+- Rename players from Krunker's name update instead of waiting for a respawn
+
 ## Krodin v0.4.0-beta.1
 
 The fourth beta. The first part is a summary of what changed since `v0.3.0-beta.1`, and the complete list follows.
