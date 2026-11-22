@@ -1,5 +1,40 @@
 # Changelog
 
+## Krodin v0.4.2-beta.1
+
+A patch release on top of `v0.4.1-beta.1`. The first part is a summary, and the complete list follows.
+
+### Maps
+
+- **Lumber:** the missing pine trees are back, the stray "ghost" models are gone, and the invisible box that blocked one tree spot is now the tree's real trunk hitbox. The sky dome is drawn.
+- **Eterno Simulator and Piazza:** surfaces that use Krunker's hosted textures now show them. Piazza's arches are drawn as open arches instead of solid disks, and objects that are invisible in Krunker are hidden.
+- **Kanji:** launch pads and light cones are drawn.
+- **Lush** and the other maps benefit from the same fixes: glowing surfaces, see-through materials, cylinders and sky domes.
+
+The map files were already current. Krodin had been ignoring or misreading several of Krunker's map object properties. The download is a few MB larger because it now includes the hosted models and textures these maps use.
+
+### Mods
+
+- **Hit sounds that were silent now play.** Sound files edited with MP3Gain carry an extra tag that Krodin's decoder choked on (the idrc mod's hit sound).
+- **Mod sounds in other formats now play.** Many mods rename AAC or Ogg Vorbis files to `.mp3`. Krodin now checks what each file really is, like the browser does. AAC uses the decoder built into Windows. A sound Krodin still cannot play is named in the log.
+
+### HUD and end screen
+
+- **Clan tags.** Players' clans show after their names on nametags, the top-right leaderboard, the Tab scoreboard and the end-of-match tables, in Krunker's format. Krunker's special clans are gold. In ranked, clans stay hidden until warmup ends, as in Krunker.
+- **Escape on the end screen** now switches between the results and the menu as many times as you like.
+- **New end titles.** Krunker's current Victory art, and its "ENDED" title for modes with no winner.
+- **FPS counter.** It no longer stops at 4096 in small windows.
+
+### Complete list of changes
+
+- Use Krunker's current Victory art and add its Ended title
+- Escape toggles between the end screen and the menu
+- Map parity: hosted art, visibility, arches, sky domes, launch pads (Lumber, Piazza, Eterno Simulator, Lush, Kanji)
+- Play mod sounds that end with an APE tag
+- Play mod sounds that are Ogg Vorbis or AAC renamed to .mp3
+- Show clan tags on nametags, leaderboard, scoreboard and end tables
+- Count FPS above 4096
+
 ## Krodin v0.4.1-beta.1
 
 A hotfix and feature update for `v0.4.0-beta.1`. The first part is a summary, and the complete list follows.
