@@ -1,5 +1,65 @@
 # Changelog
 
+## Krodin v0.5.0-beta.1
+
+A feature release on top of `v0.4.2-beta.1`. The first part covers what is new in 0.5.0, then a recap of what 0.4.1 and 0.4.2 added since 0.4.0, then the complete list.
+
+### Updates
+
+- **Krodin can now update itself.** On first open it asks whether to check for updates automatically. If you say yes, it offers each new release when you start the game, patches included, and installs it for you. You can change this any time in Settings > Gameplay, which also has a "Check for updates" button.
+- Every download is checked against its published SHA-256 before it is installed.
+
+### Matches
+
+- **Map voting.** At the end of a match you can vote for the next map from a set of map cards, as in Krunker. The counts update live, and you can change your vote.
+- **Narrator countdown and match-found sound.** The "5, 4, 3, 2, 1" narrator and the ranked match-found sound now play. They were missing from earlier downloads, together with the melee skin equip sound.
+- **Sawed Off** holds 2 shells, not 3.
+
+### Death screen
+
+- **Rebuilt to match Krunker's**: the same layout, the killer's skins and player card, the art, the background blur and the shadows.
+
+### Settings
+
+- **Changes apply instantly.** There is no Save button any more, just Close.
+- **Editing a value keeps its text.** Clicking a field that says 0.5 no longer makes you retype it.
+- **Sliders move in Krunker's steps** (for example FOV by 5, volume by 0.01). A value you type keeps its full precision.
+- **Image hitmarkers.** Settings > Hitmarker > Hitmarker image takes a link or a local file, and works like Krunker's custom hitmarker.
+- **Show Movement Speed.** Krunker's speed display (current and max) with its position, scale, opacity and colour settings, under Settings > HUD.
+
+### Maps
+
+- **Breakable objects** can be destroyed and come back, as in Krunker (Site, Kanji, Lagoon).
+- Every hosted model the maps use is now drawn.
+
+### Sound
+
+- **Long Nuke and siren sounds from mods** now fade out after a few seconds instead of playing to the end.
+
+### Since 0.4.0 (from 0.4.1 and 0.4.2)
+
+- **No login needed to join.** Invite links and the Servers page join you as a guest when you aren't logged in. Hosting still needs a Krunker account.
+- **Killstreaks.** Streak slot binds (1, 2 and 3 by default) call in earned streaks, including the Nuke with Krunker's siren, blast and flash.
+- **End screen.** Chat works there, each player shows their last class icon, Escape switches between the results and the menu, and Krunker's current Victory and "ENDED" titles are used.
+- **Clan tags** on nametags, the leaderboard, the scoreboard and the end tables, in Krunker's format.
+- **Maps.** Lumber's trees, Piazza's arches, Eterno Simulator's hosted textures, Kanji's launch pads and light cones, and sky domes everywhere.
+- **Mod sounds** that were silent now play, including MP3Gain-tagged files and AAC or Ogg files renamed to `.mp3`.
+- **Fixes.** The missing K/D and end-screen icons are back, your account name updates right after joining, and the FPS counter counts above 4096.
+
+### Complete list of changes
+
+- Auto-update: ask on first open, then offer and install every newer release
+- Vote for the next map at the end of a match
+- Death screen parity with Krunker: layout, skins, player cards, art, blur and shadows
+- Settings apply instantly; fields keep their text; sliders follow Krunker's steps
+- Image hitmarkers
+- Show Movement Speed with its settings
+- Include the narrator countdown, ranked match-found and melee equip sounds in the download
+- Cap long Nuke and siren sounds from mods
+- Map objects: breakable triggers, every hosted model, destroy and respawn
+- Sawed Off ammo is 2
+- Log memory use every 30 seconds and after each map load
+
 ## Krodin v0.4.2-beta.1
 
 A patch release on top of `v0.4.1-beta.1`. The first part is a summary, and the complete list follows.
