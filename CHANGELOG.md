@@ -1,5 +1,19 @@
 # Changelog
 
+## Krodin v0.5.1-beta.1
+
+A very small patch on top of `v0.5.0-beta.1`.
+
+### Fixes
+
+- **No more console window.** Krodin no longer opens a black console window next to the game. Logs are still written to the logs folder (Settings > Gameplay > Open logs folder).
+
+If you are on 0.5.0 and said yes to automatic updates, Krodin offers this update the next time you start it.
+
+### Complete list of changes
+
+- Build Krodin.exe without a console window
+
 ## Krodin v0.5.0-beta.1
 
 A feature release on top of `v0.4.2-beta.1`. The first part covers what is new in 0.5.0, then a recap of what 0.4.1 and 0.4.2 added since 0.4.0, then the complete list.
