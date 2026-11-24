@@ -1,5 +1,24 @@
 # Changelog
 
+## Krodin v0.5.3-beta.1
+
+A small patch on top of `v0.5.2-beta.1`.
+
+### Fixes
+
+- **No more silent close on older or driverless graphics.** If neither Vulkan 1.3 nor OpenGL 4.5 is available, Krodin used to close without a word. It now shows a message saying why:
+  - **A GPU below Krodin's minimum** is named with its OpenGL version (for example Intel HD Graphics 4600, which stops at OpenGL 4.3).
+  - **A PC with no graphics driver** is asked to install one.
+  - The details also go to the logs folder.
+- **No usernames in logs.** Logs and crash reports now write your Windows user folder as `C:\Users\<user>`, so you can share them without showing your account name.
+
+If you said yes to automatic updates, Krodin offers this update the next time you start it.
+
+### Complete list of changes
+
+- Explain a missing or too-old GPU instead of closing silently
+- Write the user folder as `<user>` in logs and reports
+
 ## Krodin v0.5.2-beta.1
 
 A patch on top of `v0.5.1-beta.1`, with new in-game UI from Krunker and a few fixes.
