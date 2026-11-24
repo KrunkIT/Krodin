@@ -1,5 +1,49 @@
 # Changelog
 
+## Krodin v0.5.2-beta.1
+
+A patch on top of `v0.5.1-beta.1`, with new in-game UI from Krunker and a few fixes.
+
+### In game
+
+- **Player List.** Press Alt, Krunker's default key, to open Krunker's Player List. You can rebind it under Settings > Key binds > Interface.
+  - It shows everyone in the lobby with their ping, clan tag, a star for the host and a search box.
+  - From the list you can start a vote kick, under Krunker's rules.
+- **Vote kick and forfeit.** Krunker's vote kick box, with the Vote kick [Yes] / [No] keys (1 and 2 by default). Type /ff in chat for the forfeit vote.
+- **Objective markers.** In Hardpoint, the active objective is marked on screen, with "Next" shown near the end of each rotation, as in Krunker. Krunker's Objective Opacity and ADS Objective Opacity settings (Settings > HUD) control them.
+- **Game messages.** Krunker's centre banners appear for:
+  - the mode name when warmup ends;
+  - Overtime and +60 Seconds;
+  - Switching Sides;
+  - who is in the lead.
+
+  The server's status line ("waiting for players" and similar) shows too.
+- **Reload prompt.** "[R] Reload" appears when your magazine is empty, using your reload key.
+- **Connection warning.** A small warning under the FPS and ping display shows when your ping is high (150 ms and up), when packets stop arriving, or when the connection is lost. This is Krodin's own design. Krunker only colours the ping number.
+- **Chat command replies.** Replies to chat commands such as /c now show in chat.
+
+### Settings
+
+- **Settings profiles.** Keep more than one set of game settings and switch between them from the top of Settings. Display and graphics settings are not part of profiles.
+- **Flick clamp removed.** The Mouse flick and Flick clamp settings are gone. Values imported from Krunker are still kept, so exporting writes them back unchanged.
+
+### Fixes
+
+- **Local Practice after a lobby.** Leaving a lobby and starting Local Practice no longer keeps you on the lobby's map; every map can be picked again.
+
+If you said yes to automatic updates, Krodin offers this update the next time you start it.
+
+### Complete list of changes
+
+- Player List window and its bind (Alt)
+- Vote kick and forfeit votes, with the Vote kick [Yes] / [No] binds
+- Objective markers in Hardpoint, with Objective Opacity and ADS Objective Opacity
+- Krunker's game messages, the reload prompt and a connection warning
+- Show chat command replies in chat
+- Settings profiles
+- Remove the Mouse flick and Flick clamp settings
+- Restore every Local Practice map after leaving a lobby
+
 ## Krodin v0.5.1-beta.1
 
 A very small patch on top of `v0.5.0-beta.1`.
