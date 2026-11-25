@@ -1,5 +1,21 @@
 # Changelog
 
+## Krodin v0.6.1-beta.1
+
+A small patch: the comp and ranked menu now plays like Krunker's, with Click to Play instead of a Play button.
+
+### Changes
+
+- **Click to Play in comp and ranked.** The Play button is gone. As in Krunker, a pulsing **CLICK TO PLAY** sits between the two team lists, and a click on empty space between the class bar and the bottom buttons plays. The class tiles, Join Team and the bottom buttons still do what they did.
+- **No more reason text.** The menu no longer shows lines such as "Choose a team to enter game" or "This class has no secondary weapon". If you can't play yet, for example before choosing a team, a click simply does nothing.
+- **Enter no longer plays** in the comp and ranked menu, since there is no Play button to press.
+
+If you said yes to automatic updates, Krodin offers this update the next time you start it.
+
+### Complete list of changes
+
+- Comp and ranked menu: Click to Play instead of a Play button, pulsing about its centre
+
 ## Krodin v0.6.0-beta.1
 
 A new menu that looks like Krunker's, plus fixes for comp lobbies, the killfeed and the Player List.
