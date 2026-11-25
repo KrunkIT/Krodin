@@ -27,6 +27,24 @@ A new menu that looks like Krunker's, plus fixes for comp lobbies, the killfeed 
 - **Tab works on the death screen.** Holding Tab during the death screen and killcam now draws the leaderboard on top instead of behind.
 - **Less clutter.** Messages Krunker doesn't show are gone: verification prompts, the respawn cooldown, and Match Over.
 
+### Also included: the 0.5.1 to 0.5.3 patches
+
+Coming from 0.5.0? These patches are part of 0.6.0 too:
+
+- **Player List** (Alt by default, rebindable): everyone in the lobby with ping, clan tag, a host star and search, and a vote kick from the list.
+- **Vote kick and forfeit votes**, with the Vote kick [Yes] / [No] keys (1 and 2 by default) and /ff in chat.
+- **Objective markers in Hardpoint**, with Objective Opacity and ADS Objective Opacity.
+- **Krunker's game messages**: the mode name, Overtime, +60 Seconds, Switching Sides and the lead, plus the server's status line.
+- **"[R] Reload" prompt** when your magazine is empty.
+- **Connection warning** under the FPS and ping display for high ping, stalled packets or a lost connection.
+- **Chat command replies** (such as /c) show in chat.
+- **Settings profiles**: keep several sets of game settings and switch from the top of Settings.
+- **Mouse flick and Flick clamp settings removed.**
+- **Local Practice** offers every map again after you leave a lobby.
+- **No console window** next to the game.
+- **A clear message instead of a silent close** when the GPU is too old or has no driver.
+- **No usernames in logs**: your user folder is written as `C:\Users\<user>`.
+
 If you said yes to automatic updates, Krodin offers this update the next time you start it.
 
 ### Complete list of changes
