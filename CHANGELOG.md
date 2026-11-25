@@ -1,5 +1,42 @@
 # Changelog
 
+## Krodin v0.6.0-beta.1
+
+A new menu that looks like Krunker's, plus fixes for comp lobbies, the killfeed and the Player List.
+
+### New
+
+- **Krunker's main menu.** The lobby screen now has Krunker's layout:
+  - the top bar with your account and Settings;
+  - the menu list on the left;
+  - the Quick Match, Ranked, Host Game and Find Game cards;
+  - the class and weapon footer;
+  - the match strip;
+  - **Click to Play**.
+- **Quick Match** joins the best public lobby for you.
+- **Customize** opens a new loadout window with Krunker's class cards and loadout tab:
+  - a 3D preview of your character;
+  - class portraits and class levels;
+  - your melee skin shown as a 3D render of the knife.
+- **Streak kills in the killfeed.** Streak kills now show the streak's picture (Nuke, Airdrop and the rest) instead of no icon. The HUD's streak boxes show the pictures too.
+
+### Fixes
+
+- **Comp and ranked: no more "Game in progress" on every spawn.** Krodin no longer sends a class change that comp and ranked servers refuse mid-match.
+- **The Player List no longer piles up.** Players who leave are taken off the Player List and the Tab board, and are listed again if they rejoin.
+- **Tab works on the death screen.** Holding Tab during the death screen and killcam now draws the leaderboard on top instead of behind.
+- **Less clutter.** Messages Krunker doesn't show are gone: verification prompts, the respawn cooldown, and Match Over.
+
+If you said yes to automatic updates, Krodin offers this update the next time you start it.
+
+### Complete list of changes
+
+- Krunker-style main menu, Quick Match and loadout window with a 3D character
+- Streak pictures in the killfeed and on the HUD
+- Skip the refused class change on comp and ranked respawns
+- Remove players who left from the Player List and Tab board
+- Draw the Tab board over the death screen and killcam
+
 ## Krodin v0.5.3-beta.1
 
 A small patch on top of `v0.5.2-beta.1`.
