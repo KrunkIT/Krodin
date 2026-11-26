@@ -1,5 +1,23 @@
 # Changelog
 
+## Krodin v0.6.2-beta.1
+
+A small patch with a ping graph and a quieter chat.
+
+### Changes
+
+- **Ping graph.** A new **Ping graph** setting (Settings > HUD > Performance, off by default) shows your round trip time over the last minute under the FPS and ping lines, like Valorant's network stats. Each bar is coloured like the ping text (green, yellow, red), and the header shows the current value, average, maximum and jitter, plus packet loss when there is any. Combined with Show Ping you get text only, graph only or both. It works in Krunker lobbies and on Krodin servers.
+- **No more weapon visibility chat messages.** Toggling weapon visibility no longer posts "Primary/Secondary/Melee weapon shown/hidden" in chat, as in Krunker. The toggle still works and is still saved.
+- **Krodin servers:** other players' legs now animate and their leg hitboxes follow the legs, hitboxes no longer grow while a player moves, and remote players stay smooth from the start at high ping. Krodin servers need this version to join.
+
+If you said yes to automatic updates, Krodin offers this update the next time you start it.
+
+### Complete list of changes
+
+- HUD: optional ping graph with average, maximum, jitter and loss
+- Weapon visibility toggle: no chat message
+- Krodin servers: leg animation and leg hitboxes for other players, no moving hitbox padding, smoother start for remote players at high ping
+
 ## Krodin v0.6.1-beta.1
 
 A small patch: the comp and ranked menu now plays like Krunker's, with Click to Play instead of a Play button.
