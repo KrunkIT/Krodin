@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.6.3-beta.1 (2026-11-27)
+## Krodin v0.6.3-beta.1
 
 A patch with player badges, crosshair scaling and fixes players asked for.
 
