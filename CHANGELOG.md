@@ -1,5 +1,31 @@
 # Changelog
 
+## v0.6.3-beta.1 (2026-11-27)
+
+A patch with player badges, crosshair scaling and fixes players asked for.
+
+### Changes
+
+- **Player badges.** Krunker's badges now show next to names on the leaderboard, the Tab board and the end-of-match table, as in Krunker: verified, premium and featured icons, the player's badge and their ranked rank on the boards that show it.
+- **Crosshair scale.** A new **Scale** slider (Settings > Gameplay > Crosshair) makes the whole crosshair bigger or smaller, from 0.1 to 2 in steps of 0.1. It works for every crosshair type, image crosshairs included.
+- **Click off the Player List.** Clicking outside the Player List now closes it, like Krunker. Esc and the Player List key still close it too.
+- **Knife pull-out sound.** Pulling out your knife now plays Krunker's equip sound (not while aiming, and not after you have thrown it).
+- **No stray headshot sound from mods.** Applying a mod or resetting to default no longer replays the last headshot kill sound.
+- **No more endless freeze when the graphics driver stops responding.** If the GPU stops answering for 10 seconds (seen on some Intel laptops with Vulkan), Krodin now saves a report, tells you the GPU stopped responding and closes, instead of freezing in fullscreen until you end it from Task Manager. If it happens to you, updating your graphics driver or switching Graphics API to OpenGL may help; please send the logs folder with your report.
+- **No countdown at the end of warmup.** In comp and ranked lobbies the 3, 2, 1 announcer no longer plays when warmup ends, as in Krunker. The countdown before the match starts is unchanged.
+
+If you said yes to automatic updates, Krodin offers this update the next time you start it.
+
+### Complete list of changes
+
+- Leaderboard, Tab board and end table: Krunker player badges
+- Crosshair: Scale setting (0.1 to 2)
+- Player List: click outside to close
+- Audio: knife equip sound on pull-out
+- Mods: applying or resetting a mod no longer replays the last kill sound
+- Comp and ranked: no announcer countdown at the end of warmup
+- Vulkan: a GPU that stops responding closes the game with a report instead of freezing it
+
 ## Krodin v0.6.2-beta.1
 
 A small patch with a ping graph and a quieter chat.
