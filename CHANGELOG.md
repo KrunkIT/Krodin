@@ -1,5 +1,23 @@
 # Changelog
 
+## Krodin v0.6.4-beta.1
+
+A patch with Krunker's animated knife skins and a fix for how other players hold their knife.
+
+### Changes
+
+- **Animated knife skins.** Five knife skins now show their animated Krunker effects instead of a plain texture: **Void Slicer** (purple plasma), **Redux**, **Plasma Ball**, **Galaxys** and **Void Fractured**, whose blade cycles through a moving fractal. They work with both Vulkan and OpenGL.
+- **Other players hold their knife properly.** Other players' knives now sit in their right hand with Krunker's arm pose and swing animation, instead of floating in front of raised, empty arms.
+- **Kill cam shows the gun that killed you.** While you watch the kill cam, your killer now holds the weapon they killed you with, as in Krunker. Before, if they switched to their knife right after the kill, you saw a knife.
+
+If you said yes to automatic updates, Krodin offers this update the next time you start it.
+
+### Complete list of changes
+
+- Knife skins: animated shader effects for Void Slicer, Redux, Plasma Ball, Galaxys and Void Fractured
+- Other players: knife held in the right hand with Krunker's third-person pose and melee animation
+- Kill cam: the killer keeps the weapon they killed you with
+
 ## Krodin v0.6.3-beta.1
 
 A patch with player badges, crosshair scaling and fixes players asked for.
